@@ -1,3 +1,6 @@
+const userInput = document.querySelector("#userInput");
+
+
 const settings = {
 	async: true,
 	crossDomain: true,
@@ -35,27 +38,39 @@ fetch(url5, option1)
 
 
 
-const url = 'https://horoscope-astrology.p.rapidapi.com/horoscope?day=today&sunsign=libra';
-const apiKey = '4a562791d8msh9b0c56728383034p1b1e0djsn0aa015a10bfb';  // Replace with your actual API key
 
-fetch(url, {
-	method: 'GET',
-	headers: {
-	'X-RapidAPI-Key': apiKey,
-	'X-RapidAPI-Host': 'horoscope-astrology.p.rapidapi.com'
-	}
-})
-.then(response => {
-	if (!response.ok) {
-	throw new Error('Network response was not ok');
-	}
-	return response.json(); // Parse the response JSON
-})
-.then(data => {
-	console.log(data); // Log the data to the console
-})
-.catch(error => {
-	console.log("Error:", error); // Log any errors
-});
+function inputAPI(answer){
+	
+	
+	const url = `https://horoscope-astrology.p.rapidapi.com/horoscope?day=week&sunsign=${answer}`;
+	const apiKey = '4a562791d8msh9b0c56728383034p1b1e0djsn0aa015a10bfb';  // Replace with your actual API key
 
-g
+	fetch(url, {
+		method: 'GET',
+		headers: {
+		'X-RapidAPI-Key': apiKey,
+		'X-RapidAPI-Host': 'horoscope-astrology.p.rapidapi.com'
+		}
+	})
+	.then(response => {
+		if (!response.ok) {
+		throw new Error('Network response was not ok');
+		}
+		return response.json(); // Parse the response JSON
+	})
+	.then(data => {
+		console.log(data); // Log the data to the console
+	})
+	.catch(error => {
+		console.log("Error:", error); // Log any errors
+	});
+}
+
+
+
+userInput.addEventListener("submit",function(e) {
+	e.preventDefault();
+	const answer = new FormData(userInput).get("answers")
+	inputAPI(answer);
+})
+

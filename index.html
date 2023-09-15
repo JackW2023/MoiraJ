@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
+    <form id="userInput">
+        <label for="answers">sign:</label>
+        <!-- <input type="text" id="question" name="question" disabled value="choose your sign" /> <label
+            for="answers">Answers:</label>  -->
+        <select id="answers" name="answers">
+            <option value="aries">aries</option>
+            <option value="taurus">taurus</option>
+            <option value="gemini">gemini</option>
+            <!-- Add more options for the remaining answers -->
+        </select>
+        <button type="submit">confirm</button>
+    </form>
     <script src="./Assets/js/script.js"></script>
 </body>
+
 </html>
