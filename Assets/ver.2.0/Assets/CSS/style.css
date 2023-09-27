@@ -1,0 +1,61 @@
+html {
+    background-image: linear-gradient(to right, black , grey);
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+#main-contents {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 70px;
+    padding: 50px;
+    color: white;
+}
+
+p {
+    font-size: 31px;
+    color: white;
+}
+
+
+#footer img {
+    max-width: 10%;
+    /* border: 1px red solid; */
+    height: auto;
+    vertical-align: middle; 
+}
+
+
+.page-portal {
+    display: flex;
+    /* border: 1px red solid; */
+}
+
+.nextpage-btn {
+    font-size: 40px;
+    width: 793px;
+    padding: 0;
+    margin-left: 47px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+/* Add this to your existing CSS */
+.page-portal a {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;  /* Inherits color from the parent, which should be the button */
+}
+
+/* If you want to handle visited links as well */
+.page-portal a:visited {
+    color: inherit;  /* Inherits color from the parent */
+}

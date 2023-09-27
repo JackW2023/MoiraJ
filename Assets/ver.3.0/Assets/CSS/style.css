@@ -1,0 +1,62 @@
+html {
+    background-image: linear-gradient(to right, black , grey);
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+#main-contents {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+h1 {
+    font-size: 70px;
+    padding: 50px;
+    color: white;
+}
+
+
+p {
+    font-size: 31px;
+    color: white;
+}
+
+
+#footer img {
+    max-width: 10%;
+    height: auto;
+    vertical-align: middle; 
+}
+
+/*
+.page-portal {
+    display: flex;
+    
+}
+
+.nextpage-btn {
+    font-size: 40px;
+    width: 793px;
+    padding: 0;
+    margin-left: 47px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.page-portal a {
+    text-decoration: none;  
+    color: inherit; 
+}
+
+
+.page-portal a:visited {
+    color: inherit;  
+} */

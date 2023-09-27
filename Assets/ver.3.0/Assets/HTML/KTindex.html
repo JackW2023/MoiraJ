@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zodiac Weekly Horoscope</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/KTstyle.css">
+</head>
+
+<body>
+    <div id="kt-index">
+    <div class="inside-container">
+        <form id="userInput" class="p-12">
+            <label for="answers">Select Your <br> Sign:</label>
+            <br>
+            <!-- <input type="text" id="question" name="question" disabled value="choose your sign" /> <label
+            for="answers">Answers:</label>  -->
+            <select id="answers" name="answers">
+                <option value="" disabled hidden></option>
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpius">Scorpius</option>
+                <option value="sagittarius">Sagittarius</option>
+                <option value="capricorn">Capricorn</option>
+                <option value="aquarius">Aquarius</option>
+                <option value="pisces">Pisces</option>
+                <!-- Add more options for the remaining answers -->
+            </select>
+            <button type="submit">ok</button>
+        </form>
+    </div>
+    <section id="display">
+        <template id="api-result">
+            <div>
+                <h2 class="selected-sign">sign</h2>
+                <p class="weekly-horoscope">result</p>
+            </div>
+        </template>
+    </section>
+    </div>
+    
+    <div id="jw-index" style="display: none;">
+    <header id="header" class="text-8xl p-12 text-white">
+        <h1 class="selected-sign" style="font-family: 'Canva Sans', sans-serif;"></h1>
+    </header>
+    <section id="main-contents" class="flex flex-row-reverse items-start p-12 text-lg text-white">
+        <div class="left-section">
+            <p class="weekly-horo" style="font-family: 'Canva Sans', sans-serif;"></p>
+        </div>
+        <div class="right-section">
+            <img class="w-1/2 h-auto" src="" alt="Sign Image">
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="page-portal flex">
+            <button class="nextpage-btn" >
+                <a href="../HTML/KWindex.html" class="p-12 text-white text-4xl whitespace-nowrap" style="font-family: 'Canva Sans', sans-serif;">Unlock Your Fortune</a>
+            </button>
+            <a href="../HTML/KWindex.html">
+                <img src="../images/arrow.png" alt="Greater Than Arrow Sign" style="max-width: 10%; height: auto; vertical-align: middle;">
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

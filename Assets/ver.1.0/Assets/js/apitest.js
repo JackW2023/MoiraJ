@@ -53,3 +53,41 @@ fetch(url4, {
 .catch(err => {
   console.log("Error:", err);  // Log any errors
 });
+
+
+
+
+const settings = {
+	async: true,
+	crossDomain: true,
+	url: 'https://horoscope-astrology.p.rapidapi.com/dailyphrase',
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '4a562791d8msh9b0c56728383034p1b1e0djsn0aa015a10bfb',
+		'X-RapidAPI-Host': 'horoscope-astrology.p.rapidapi.com'
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+
+
+const url5 = 'https://fortune-cookie4.p.rapidapi.com/';
+const apiKey2 = '4a562791d8msh9b0c56728383034p1b1e0djsn0aa015a10bfb';
+const option1 = {
+	method: 'Get',
+	headers: {
+		'X-RapidAPI-Key': '4a562791d8msh9b0c56728383034p1b1e0djsn0aa015a10bfb',
+		'X-RapidAPI-Host': 'fortune-cookie4.p.rapidapi.com'
+	  }
+}
+
+fetch(url5, option1)
+	.then(function(response) {
+		return response.json()
+	})
+	.then(function(data){
+		console.log(data);
+	})

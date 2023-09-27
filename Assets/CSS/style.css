@@ -1,0 +1,9 @@
+/* Page3 Attribute */
+@media screen and (max-width: 768px) {
+    #main-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to right, #000000, #737373);
+    margin-top: 25vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+label {
+    font-family: "Canva Sans", sans-serif;
+    color: white;
+}
+form label {
+    font-size: 100px;
+    display: flex;
+    align-items: left;
+    height: 100 vh;
+    margin-top: 310px;
+    margin-right: 500px;
+    margin-left: 130px;
+}
+select {
+    margin-top: 10px;
+    margin-left: 130px;
+    width: 200px;
+    height: 40px;
+    font-size: 11px;
+}
+button {
+    margin-top: 10px;
+    width: 50px;
+    height: 40px;
+    font-size: 11px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+button:hover {
+    transform: scale(1.01);
+    background-color: #CB6CE6;
+    color: white;
+}

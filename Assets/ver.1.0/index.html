@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="userInput">
+        <label for="answers">sign:</label>
+        <!-- <input type="text" id="question" name="question" disabled value="choose your sign" /> <label
+            for="answers">Answers:</label>  -->
+        <select id="answers" name="answers">
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <!-- Add more options for the remaining answers -->
+        </select>
+        <button type="submit">confirm</button>
+    </form>
+
+
+    <section id="display">
+        <template id="api-result">
+            <div>
+                <h2 class="selected-sign">sign</h2>
+                <p class="weekly-horoscope">result</p>
+            </div>
+        </template>
+    </section>
+
+    <script src="./Assets/js/apitest.js"></script>
+    <script src="./Assets/js/script.js"></script>
+</body>
+
+</html>
